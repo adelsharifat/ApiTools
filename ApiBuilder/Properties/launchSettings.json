@@ -1,0 +1,9 @@
+{
+  "profiles": {
+    "ApiBuilder": {
+      "commandName": "Project",
+      "commandLineArgs": "-h",
+      "nativeDebugging": true
+    }
+  }
+}

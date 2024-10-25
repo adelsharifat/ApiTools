@@ -29,6 +29,15 @@ namespace ApiBuilder.Helpers
             return filePath;
         }
 
+        public static FileInfo FilePathByName(string filePath)
+        {
+            if (!File.Exists(filePath)) return null;
+
+            var fileInfo = new FileInfo(filePath);
+            return fileInfo;
+        }
+
+
         public static FileInfo FilePathByExtention(string extention, string directoryPath = null)
         {
             var directory = GetDirectory(directoryPath);
